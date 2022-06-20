@@ -1,3 +1,3 @@
-#!usr/local/bin/phyton3
+#!usr/local/bin/python3
 
 print("Hello world!")

@@ -23,3 +23,6 @@ for file in files:
                     # We only need unique IPs
                     if ip not in dict.values():
                         dict[ip] = mask
+
+for key in dict:
+    print(f'{key}: {dict[key]}')

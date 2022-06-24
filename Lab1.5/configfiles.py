@@ -5,7 +5,7 @@ import glob
 path = r'C:\Users\ma.gusmanov\Downloads\config_files'
 files = glob.glob(rf'{path}\*.txt')
 sub = "ip address"
-dict = {}
+dic = {}
 
 for file in files:
     with open(file) as f:
@@ -20,9 +20,7 @@ for file in files:
                 if len(temp) > 3:
                     ip = temp[2]
                     mask = temp[3]
-                    # We only need unique IPs
-                    if ip not in dict.values():
-                        dict[ip] = mask
+                    dic[ip] = mask # We only need unique IPs
 
-for key in dict:
-    print(f'{key}: {dict[key]}')
+for key in dic:
+    print(f'{key}: {dic[key]}')

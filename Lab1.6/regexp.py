@@ -1,7 +1,9 @@
 #!usr/local/bin/python3
+
 import re
 from ipaddress import IPv4Interface
 import glob
+
 
 def ip_check(line):
     # We only need IP addresses and not any mess with numbers and dots

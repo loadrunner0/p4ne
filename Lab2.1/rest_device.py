@@ -1,9 +1,7 @@
 #!usr/local/bin/python3
 
 import requests
-import pprint
 import ssl
-import urllib3
 
 from urllib3.poolmanager import PoolManager
 from requests.adapters import HTTPAdapter
